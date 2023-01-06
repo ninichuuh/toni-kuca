@@ -10,14 +10,12 @@ const variants = {
 const EmailButtonVariants = {
   idle: {
     opacity: 1,
-    borderRadius: 0,
     borderRadius: "8px",
     width: 120,
     height: 48,
   },
   pending: {
     opacity: 0.75,
-    borderRadius: 0,
     borderRadius: "8px",
     width: 120,
     height: 48,
