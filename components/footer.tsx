@@ -15,8 +15,8 @@ const Footer: NextPage<FooterProps> = ({ year }) => {
   }, []);
 
   return (
-    <footer>
-      Copyright &copy; {currentYear}
+    <footer className='flex flex-col justify-center items-center'>
+      Copyright &copy; MiNiMa {currentYear}
     </footer>
   );
 }

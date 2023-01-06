@@ -1,7 +1,13 @@
 import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout({ children, font }) {
+
+interface Props {
+  children?: any
+  font: any
+  // any props that come into the component
+}
+export default function Layout({ children, font }: Props) {
   return (
     <div
       className={`relative min-h-full flex flex-col overflow-hidden ${font.className}`}
@@ -12,7 +18,7 @@ export default function Layout({ children, font }) {
 
       <main className="flex flex-1 ">{children}</main>
 
-      <Footer />
+      <Footer year={0} />
     </div>
   );
 }
