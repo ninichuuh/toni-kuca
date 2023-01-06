@@ -25,7 +25,7 @@ const EmailButtonVariants = {
 
 export default function Contact() {
   const [emailStatus, setEmailStatus] = useState("idle");
-  async function sendEmail(event) {
+  async function sendEmail(event: any) {
     const { name, email, subject, message } = event.target.elements;
     event.preventDefault();
     try {
@@ -161,7 +161,7 @@ export default function Contact() {
   );
 }
 
-function CheckIcon(props) {
+function CheckIcon(props: any) {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
       <motion.path

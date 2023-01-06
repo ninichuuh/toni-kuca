@@ -40,7 +40,7 @@ export default function Landing() {
             <Link
               className="group ring-0 relative border-2 border-yellow p-3 cursor-pointer outline-none"
               aria-label="linkedin"
-              href="https://www.linkedin.com/in/alanjibarra/"
+              href="https://www.booking.com/hotel/hr/kuca-viganj.en-gb.html?sid=999878b4be84b5a8d2c14e6565714fcb"
               target="_blank"
             >
               <span
@@ -55,7 +55,7 @@ export default function Landing() {
             <Link
               className="group relative border-2 border-yellow p-3 cursor-pointer outline-none"
               aria-label="github"
-              href="https://github.com/Ibarra11"
+              href=" https://wa.me/385994183709"
             >
               <span
                 className="absolute  top-0 left-0  bg-yellow  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
