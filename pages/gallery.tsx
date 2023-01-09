@@ -25,16 +25,17 @@ const MasonryGallery: React.FC = () => {
   ];
 
   return (
-    <ResponsiveMasonry className="w-full mt-12 relative" columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+    <ResponsiveMasonry className="w-full mt-12 relative mx-2" columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
       <Masonry gutter="20" className="">
         {images.map((image) => (
           <Image      
             key={image}
             src={image}
             alt="House"
-            width={310}
-            height={310}
+            width={400}
+            height={350}
             className="my-3 relative self-center"
+            loading="lazy"
           />
         ))}
       </Masonry>

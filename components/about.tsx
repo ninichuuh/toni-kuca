@@ -54,7 +54,7 @@ export default function About() {
             </p>
           </div>
           <div className={clsx("col-span-4 text-gray-700", "lg:col-span-2")}>
-            <h3 className=" text-2xl mb-6">My Skills</h3>
+            <h3 className=" text-2xl mb-6">Naše usluge</h3>
             <motion.div
               whileInView="animate"
               viewport={{ amount: 0.6, once: true }}

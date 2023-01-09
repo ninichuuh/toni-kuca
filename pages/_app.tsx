@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { AppProps } from "next/app";
+import { AnimatePresence } from "framer-motion";
 const raleway_font = Raleway({ subsets: ["latin"] });
-function MyApp({ Component , pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
     router.events.on("hashChangeStart", () => {
@@ -18,7 +19,9 @@ function MyApp({ Component , pageProps }: AppProps) {
 
   return (
     <Layout font={raleway_font}>
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait">
+        <Component {...pageProps} />
+      </AnimatePresence>
     </Layout>
   );
 }

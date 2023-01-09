@@ -65,13 +65,13 @@ export default function Gallery() {
             viewport={{ amount: 0.6, once: true }}
             initial="initial"
             variants={SkillsGridContainer}
-            className="grid grid-cols-2 gap-x-2 gap-y-2"
+            className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2"
           >
             {images.map((images) => (
               <motion.div
                 key={images.id}
                 variants={SkillItem}
-                className="flex flex-col gap-2 p-2 shadow-md rounded-lg"
+                className="flex flex-col gap-2 p-2 "
                 whileHover={{
                   scale: 1.1,
                   transition: { duration: 0.7 },
@@ -80,9 +80,10 @@ export default function Gallery() {
                 <Image
                   src={images.src}
                   alt="House"
-                  width={800}
+                  width={8000}
                   height={60}
                   className="self-center"
+                  loading="lazy"
                 />
               </motion.div>
             ))}

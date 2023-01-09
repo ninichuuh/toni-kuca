@@ -69,7 +69,7 @@ export default function Header() {
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href={`${
-                    router.pathname === "/" ? "#projects" : "/#projects"
+                    router.pathname === "/" ? "/gallery" : "/#projects"
                   }`}
                   scroll={false}
                 >
