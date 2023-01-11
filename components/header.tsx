@@ -6,8 +6,6 @@ import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
-
-
 export default function Header() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +29,13 @@ export default function Header() {
               href={`${router.pathname === "/" ? "#home" : "/#home"}`}
               scroll={false}
             >
-              {/* <Image src={"/"} alt="logo" className="w-full h-full" width={32} height={32}/> */}
+              <Image
+                src={"/"}
+                alt="logo"
+                className="w-full h-full"
+                width={32}
+                height={32}
+              />
             </Link>
           </li>
           {/* Hamburger Menu */}
@@ -52,7 +56,7 @@ export default function Header() {
                   href={`${router.pathname === "/" ? "#home" : "/#home"}`}
                   scroll={false}
                 >
-                  Naslovna
+                  Home
                 </Link>
               </li>
               <li>
@@ -61,7 +65,7 @@ export default function Header() {
                   href={`${router.pathname === "/" ? "#about" : "/#about"}`}
                   scroll={false}
                 >
-                  O nama
+                  About
                 </Link>
               </li>
 
@@ -73,7 +77,7 @@ export default function Header() {
                   }`}
                   scroll={false}
                 >
-                  Galerija
+                  Gallery
                 </Link>
               </li>
               <li>
@@ -82,7 +86,16 @@ export default function Header() {
                   href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
                   scroll={false}
                 >
-                  Kontakt
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                  href={`${router.pathname === "/" ? "/legal" : "/legal"}`}
+                  scroll={false}
+                >
+                  Legal
                 </Link>
               </li>
             </ul>

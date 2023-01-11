@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
 
-interface FooterProps {
+ export interface FooterProps {
   year: number;
 }
 

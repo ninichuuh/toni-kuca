@@ -62,7 +62,7 @@ const MobileMenu: FunctionComponent<MobileMenuProps> = ({ isOpen, handleOpenChan
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
-                      Naslovna
+                      Home
                     </button>
                   </motion.li>
                   <motion.li variants={item}>
@@ -73,7 +73,7 @@ const MobileMenu: FunctionComponent<MobileMenuProps> = ({ isOpen, handleOpenChan
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
-                      Galerija
+                      Gallery
                     </button>
                   </motion.li>
                   <motion.li variants={item}>
@@ -84,7 +84,7 @@ const MobileMenu: FunctionComponent<MobileMenuProps> = ({ isOpen, handleOpenChan
                       }}
                       className="text-2xl px-12 py-2 focus hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
-                      O nama
+                      About
                     </button>
                   </motion.li>
                   <motion.li variants={item}>
@@ -95,7 +95,18 @@ const MobileMenu: FunctionComponent<MobileMenuProps> = ({ isOpen, handleOpenChan
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
-                      Kontakt
+                      Contact
+                    </button>
+                  </motion.li>
+                  <motion.li variants={item}>
+                    <button
+                      onClick={() => {
+                        handleOpenChange(false);
+                        router.push("/legal");
+                      }}
+                      className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                    >
+                      Legal
                     </button>
                   </motion.li>
                 </motion.ul>

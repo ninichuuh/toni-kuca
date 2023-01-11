@@ -8,6 +8,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+   
     extend: {
       colors: {
         black: "hsl(228, 19%, 5%)",
@@ -16,7 +17,7 @@ module.exports = {
         "light-grey": "hsl(210, 2%, 78%)",
         "light-emerald": "hsl(177, 40%, 45%)",
         "dark-emerald": "hsl(177, 41%, 36%)",
-        "yellow": "hsl(56,100%,50%)"
+        yellow: "hsl(56,100%,50%)",
       },
     },
   },

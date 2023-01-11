@@ -1,19 +1,15 @@
-import Header from "./header";
+import { motion } from "framer-motion";
+import { NextComponentType } from "next";
+import { JsxElement } from "typescript";
 import Footer from "./footer";
+import Header from "./header";
 
-interface Props {
-  children?: any;
-  font: any;
-  // any props that come into the component
-}
-export default function Layout({ children, font }: Props) {
-  return (
-    <div
-      className={`relative min-h-full flex flex-col overflow-hidden ${font.className}`}
-    >
-      <Header />
-      <main className="flex flex-1 ">{children}</main>
-      <Footer year={0} />
-    </div>
-  );
-}
+const Layout = ({ children }:any) => (
+  <>
+    <Header />
+    <main> {children}</main>
+    <Footer year={0} />
+  </>
+);
+
+export default Layout;

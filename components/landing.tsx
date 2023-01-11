@@ -29,13 +29,14 @@ export default function Landing() {
           className=" flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
         >
           <h3 className=" text-yellow text-xl font-medium md:text-2xl mb-2">
-            Kuća za odmor
+            Authentic old
           </h3>
           <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-2 ">
-            Vila ToniBomboni
+            Stonehouse
           </h1>
           <p className="text-lg md:text-xl text-yellow mb-4">
-            Najbolja najveca najsve jbt i tako fali jos teksta na peljscu sunce pici a meni draga bolesna
+            TEXT OVDJE I GORE SMISLIT KAKO ZELITE al ga treba biti onako dosta mislim 2 recenice najbtinije na stranici
+            Boje i to mozemo mjenjat i sve
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <Link
@@ -49,7 +50,7 @@ export default function Landing() {
                   "
               ></span>
               <TbBrandBooking   
-                className="relative z-10 text-yellow fill-dark-emerald  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                className="relative z-10 text-blue-900 fill-yellow  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
                 size={24}
               />
             </Link>
@@ -63,7 +64,7 @@ export default function Landing() {
                   "
               ></span>
               <FaWhatsapp
-                className="relative z-10 text-yellow    duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                className="relative z-10 text-yellow  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
                 size={24}
               />
             </Link>
