@@ -57,7 +57,7 @@ export default function Landing() {
             <Link
               className="group relative border-2 border-yellow p-3 cursor-pointer outline-none"
               aria-label="whatsapp"
-              href=" https://wa.me/385994183709"
+              href=" https://www.wa.me/385994183709"
             >
               <span
                 className="absolute  top-0 left-0  bg-yellow  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
