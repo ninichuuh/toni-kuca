@@ -12,7 +12,7 @@ const Meta = () => {
         name="keywords"
         content="house rent authentic bla keywords bla"
       ></meta>
-      <mwta name="title">Authentic Stonehouse Viganj</mwta>
+      <title>Authentic Stonehouse Viganj</title>
       <meta name="og:title" content="Authentic Stonehouse Viganj"></meta>
       <meta
         name="og:description"
