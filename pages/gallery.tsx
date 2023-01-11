@@ -4,8 +4,13 @@ import Layout from "../components/layout";
 import { images } from "../data/images";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+type images = [
+  {id: undefined,
+  src: string,
+  blurUrl: string
+}] | any
 const MasonryGallery = () => {
-  function getMultipleRandom(images, num) {
+  function getMultipleRandom(images: images, num: number) {
     const shuffled = [...images].sort(() => 0.2 - Math.random());
 
     return shuffled.slice(0, num);
